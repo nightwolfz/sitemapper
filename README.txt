@@ -1,7 +1,12 @@
 README
 ======
 
-This is my, Michael Cypher, solution to the GoCardless web crawler problem. Thank you for taking the time to look at it. A jar has been provided to run the code and the code has also been provided.
+Fast Java Web Crawler
+
+A fast web crawler / mapper that maps out sites on a specific domain. 
+
+For example, given google.com, it will 'map' a the page by displaying the links that point to other pages on the same domain (ie. google.com/about but not facebook.com) and will post the links that it points to and 'recurse' by mapping the links on those pages. It does this pretty quickly.
+
 
 Usage
 =====
@@ -12,7 +17,7 @@ java -jar SiteMapper.jar URL FILE [LINK | ASSET]
 
 For example:
 
-java -jar SiteMapper.jar www.gocardless.com example_output.txt
+java -jar SiteMapper.jar www.google.com example_output.txt
 
 If LINK or ASSET are not provided, it uses LINK by default. LINK is explained more further on. ASSET is not implemented yet as explained further on.
 
